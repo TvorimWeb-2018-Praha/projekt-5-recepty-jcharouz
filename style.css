@@ -8,6 +8,7 @@ html { box-sizing: border-box; }
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 h2 {
@@ -24,6 +25,84 @@ h2 {
 .paticka a {
     color: silver;
 }
+
+.doporucujeme{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.hlavni-recept {
+    min-height: 200px;
+    height: auto;
+    background-image: url(images/burger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.recept-kategorie {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: source sans pro;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.recept-komentare {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: source sans pro;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.recept-nazev {
+    font-weight: 800;
+    font-size: 28px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.recept-nazev-hlavni {
+    font-weight: 800;
+    font-size: 28px;
+    position: absolute;
+    width: auto;
+    top: 157px;
+    left: 15px;
+}
+
+.sloupec {
+
+}
+
+.recept { 
+    min-height: 90px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.recept2 {
+    background-image: url(images/sushi.jpg);
+}
+
+.recept3 {
+    background-image: url(images/rajcata.jpg);
+}
+
+.recept4 {
+    background-image: url(images/kure.jpg)
+}
+
+.recept5 {
+    background-image: url(images/grilovani.jpg)
+}
+
+
+
 
 /* -------------------------------------------------- */
 
