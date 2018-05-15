@@ -29,17 +29,14 @@ h2 {
 .doporucujeme{
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    height: 95VH;
 }
 
 .hlavni-recept {
-    min-height: 200px;
-    height: auto;
+    min-height: 200px !important;
     background-image: url(images/burger.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
+
 .recept-kategorie {
     font-weight: 400;
     font-size: 14px;
@@ -48,6 +45,7 @@ h2 {
     left: 15px;
     top: 15px;
 }
+
 .recept-komentare {
     font-weight: 400;
     font-size: 14px;
@@ -59,7 +57,7 @@ h2 {
 
 .recept-nazev {
     font-weight: 800;
-    font-size: 28px;
+    font-size: 18px;
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -69,13 +67,8 @@ h2 {
     font-weight: 800;
     font-size: 28px;
     position: absolute;
-    width: auto;
-    top: 157px;
+    bottom: 15px;
     left: 15px;
-}
-
-.sloupec {
-
 }
 
 .recept { 
@@ -85,6 +78,7 @@ h2 {
     background-repeat: no-repeat;
     position: relative;
 }
+
 .recept2 {
     background-image: url(images/sushi.jpg);
 }
@@ -101,9 +95,82 @@ h2 {
     background-image: url(images/grilovani.jpg)
 }
 
+@media (min-width: 480px) { 
+    .doporucujeme {
+       flex-direction: column;
+       flex-wrap: wrap;
+   }
 
+   .sloupec {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    }
+   
+    .recept { 
+        min-height: 150px;
+        flex-basis: 100%;
+    }
 
+    .recept-kategorie {
+        left: 20px;
+        top: 20px;
+    }
 
+    .hlavni-recept {
+        min-height: 250px;
+        flex-basis: 100%;
+    }
+
+    .recept-nazev {
+        font-size: 22px;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .recept-nazev-hlavni {
+        font-size: 36px;
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    .recept-komentare {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+@media (min-width: 860px) {
+    .doporucujeme {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .sloupec {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33.33%;
+    } 
+
+    .recept { 
+        min-height: 200px;
+    }
+
+    .hlavni-recept {
+        min-height: 400px !important;
+        flex-basis: 33.33%;
+    }
+
+    .recept-nazev {
+        font-size: 28px;
+    }
+
+  .recept-nazev-hlavni {
+        font-size: 48px;
+        bottom: 20px;
+        left: 20px;
+    }
+}
 /* -------------------------------------------------- */
 
 /*
